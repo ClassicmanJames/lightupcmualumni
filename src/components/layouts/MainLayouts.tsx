@@ -16,7 +16,9 @@ const MainLayouts = (props: Props) => {
       <div className="flex flex-row w-screen max-w-screen min-h-[100dvh] ">
         <div className="flex flex-gorw flex-col min-h-[100dvh] w-[100vw] relative">
           <MainNav />
-          <div className={"p-5 flex-grow"}>{props.children}</div>
+          <div className="flex flex-col items-center w-full">
+            <div className={"p-5 flex-grow max-w-xl"}>{props.children}</div>
+          </div>
           <div className="sm:w-[calc(100vw)] w-[100vw]"></div>
         </div>
       </div>
