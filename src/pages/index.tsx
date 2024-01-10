@@ -17,12 +17,12 @@ export default function Home() {
   const token = searchParams.get("token");
 
   useEffect(() => {
-    //dispath(Setting.updateState({ isLoadingScreen: true }));
-    if (token) {
-      checkData();
-    }
+    dispath(Setting.updateState({ isLoadingScreen: true }));
+
+    checkData();
+
     //dispath(User.updateState({ accessToken: search }));
-  }, [token]);
+  }, []);
 
   const checkData = async () => {
     // if (stu === "1") {
@@ -36,7 +36,7 @@ export default function Home() {
     };
     console.log(datasent);
     const response = await axios.post(
-      process.env.NEXT_PUBLIC_CMU_SERVICE + `/checkdup`,
+      process.env.NEXT_PUBLIC_CMU_SERVICE + `/all_count`,
       datasent,
       {
         headers: {
