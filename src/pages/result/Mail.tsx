@@ -31,7 +31,35 @@ const Mail = () => {
     control,
     setValue,
   } = useForm<FormValues>();
-  const setDataUserTracking = (data: FormValues) => {};
+  const setDataUserTracking = async (data: FormValues) => {
+    setDisableBtnsub(true);
+    dispath(Setting.updateState({ isLoadingScreen: true }));
+    let datasent = {
+      token: token,
+      email: data.email,
+    };
+    console.log(datasent);
+    const response = await axios.post(
+      process.env.NEXT_PUBLIC_CMU_SERVICE + `/updateEmail`,
+      datasent,
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    );
+    console.log(response);
+    if (response.data.status === 1) {
+      //console.log(response.data.msg);
+      router.push("/result/Done");
+    } else if (response.data.status === 41) {
+      dispath(Setting.updateState({ isLoadingScreen: true }));
+      router.push("/result/Serverfull");
+    } else if (response.data.status === 43) {
+      //console.log(response.data.msg);
+      router.push("/result/Success");
+    }
+  };
   return (
     <>
       <div className="grid m-5 h-50 bg-[#FBFBFB] drop-shadow-xl rounded-xl  ms:cols-12">
