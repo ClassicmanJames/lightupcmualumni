@@ -224,13 +224,20 @@ export default function Home() {
             <ul className="list-disc text-sm mt-2">
               <li>
                 ห้ามถ่ายทอดสด หรือ LIVE ด้วย Application ทุกชนิด <br />
-                (Weapons, weapon imitations, sharp objects, hazardous
-                substances, and drugs are prohibited.)
+                (Broadcast or live stream to all platforms)
               </li>
               <li>
                 ห้ามนำอาวุธ สิ่งเทียมอาวุธ ของมีคม วัตถุอันตราย
                 และสารเสพติดทุกชนิดเข้าภายในงาน <br />
-                (Food, drinks, and water bottles cannot enter the concert area.)
+                (Food, drinks, and water bottles cannot enter the concert
+                area.ited.)
+              </li>
+
+              <li>
+                ห้ามนำเครื่องดื่ม ขวดน้ำดื่ม หรืออาหาร ทุกชนิด
+                จากภายนอกเข้ามาภายในบริเวณพื้นที่ชมคอนเสิร์ต <br />
+                (Weapons, weapon imitations, sharp objects, hazardous
+                substances, and drugs are prohibited.)
               </li>
 
               <li>
