@@ -229,15 +229,15 @@ export default function Home() {
               <li>
                 ห้ามนำอาวุธ สิ่งเทียมอาวุธ ของมีคม วัตถุอันตราย
                 และสารเสพติดทุกชนิดเข้าภายในงาน <br />
-                (Food, drinks, and water bottles cannot enter the concert
-                area.ited.)
+                (Weapons, weapon imitations, sharp objects, hazardous
+                substances, and drugs are prohibited.)
               </li>
 
               <li>
                 ห้ามนำเครื่องดื่ม ขวดน้ำดื่ม หรืออาหาร ทุกชนิด
                 จากภายนอกเข้ามาภายในบริเวณพื้นที่ชมคอนเสิร์ต <br />
-                (Weapons, weapon imitations, sharp objects, hazardous
-                substances, and drugs are prohibited.)
+                (Food, drinks, and water bottles cannot enter the concert
+                area.ited.)
               </li>
 
               <li>
