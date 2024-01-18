@@ -23,7 +23,7 @@ const Fail = () => {
       </div>
       <div className="h-50  rounded-lg  text-red-500  text-center">
         <div className="bg-red-100 p-5 rounded-lg">
-          คุณไม่สามารถรับสิทธิ์ได้
+          ขณะนี้ระบบได้ปิดรับลงทะเบียน (Registration is closed)
         </div>
       </div>
     </div>
